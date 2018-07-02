@@ -1,0 +1,34 @@
+#personal setting
+export PATH=${HOME}/tools/global/install/usr/local/bin/:$PATH
+export SVN_EDITOR=vim
+alias rgrep='find . -name "*.svn*" -prune -o -type f -print0 | xargs -0 grep -n'
+export LS_COLORS='di=1;36:fi=0:ln=1;95:so=1;91:pi=1;91:ex=94:bd=1;91;46:cd=1;91:or=1;37:mi=1;37:*.rpm=1;92'
+
+alias s1='svn log --limit 1'
+alias ss='svn log --stop-on-copy'
+alias sl='svn log --limit'
+alias si='svn info'
+alias sc='svn copy'
+
+alias m='make'
+
+alias ls='ls -U --color=auto --ignore={*.d,*.o}'
+alias tmux='LD_LIBRARY_PATH=${HOME}/bin/lib tmux'
+##alias gl='git lmt:"<%h> %ad [%cn] %Cgreen%d%Creset %s"  --date=iso'g --graph --date-order -C -M --pretty=format:"<%h> %ad [%cn] %Cgreen%d%Creset %s" --all --date=iso'
+#alias gl='git log --graph --date-order -C -M --pretty=format:"<%h> %ad [%cn] %Cgreen%d%Creset %s"  --date=short'
+alias gl='git log --graph --date-order -C -M --pretty=format:"<%h> %ad [%cn] %Cgreen%d%Creset %s"  --date=iso -n 50'
+#alias gl='git log --graph --date-order -C -M --pretty=format:"<%h> %ad [%cn] %Cgreen%d%Creset %s"  --date=iso '
+alias gs='git status -uno'
+alias gd='git diff'
+alias gf='git fetch --all'
+alias gc='git checkout'
+alias gp='git pull'
+alias gb='git branch '
+alias ga='git add'
+alias gr='git rebase'
+alias gm='git merge'
+
+alias dcleana='find ./ -name *.d -exec rm  {} \;; find ./ -name *.o -exec rm  {} \;'
+alias dcleana='find ./ -name *.d -exec rm  {} \;; find ./ -name *.o -exec rm  {} \;; find ./ -name *.a -exec rm  {} \;'
+
+
