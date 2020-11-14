@@ -36,4 +36,6 @@ alias gm='git merge'
 alias dcleana='find ./ -name *.d -exec rm  {} \;; find ./ -name *.o -exec rm  {} \;'
 alias dcleana='find ./ -name *.d -exec rm  {} \;; find ./ -name *.o -exec rm  {} \;; find ./ -name *.a -exec rm  {} \;'
 
-
+alias dr='docker rm'
+alias dri='docker rmi'
+alias dpa='docker ps -a'
