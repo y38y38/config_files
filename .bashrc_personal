@@ -32,6 +32,7 @@ alias gb='git branch '
 alias ga='git add'
 alias gr='git rebase'
 alias gm='git merge'
+alias gp='git push origin master'
 
 alias dcleana='find ./ -name *.d -exec rm  {} \;; find ./ -name *.o -exec rm  {} \;'
 alias dcleana='find ./ -name *.d -exec rm  {} \;; find ./ -name *.o -exec rm  {} \;; find ./ -name *.a -exec rm  {} \;'
@@ -39,3 +40,4 @@ alias dcleana='find ./ -name *.d -exec rm  {} \;; find ./ -name *.o -exec rm  {}
 alias dr='docker rm'
 alias dri='docker rmi'
 alias dpa='docker ps -a'
+alias di='docker images'
